@@ -29,16 +29,16 @@ h3{font-family:"Lilita One",sans-serif;font-weight:400;color:var(--red);font-siz
 
 /* nav */
 .nav{position:sticky;top:0;z-index:10;background:var(--red);box-shadow:0 2px 8px rgba(70,30,20,.2)}
-.nav .wrap{display:flex;align-items:center;gap:8px;height:56px}
-@media(max-width:419px){.nav .wrap{padding:0 12px}}
+.nav .wrap{display:flex;align-items:center;gap:6px;height:52px}
+@media(max-width:419px){.nav .wrap{padding:0 10px}}
 .nav .home{flex:0 0 auto;display:flex}
-.nav .home img{height:40px;width:auto;filter:invert(1);mix-blend-mode:screen}
-.nav ul{display:flex;flex-wrap:nowrap;flex:1 1 auto;justify-content:flex-end;min-width:0;gap:2px;margin:0 0 0 auto;padding:0;list-style:none}
+.nav .home img{height:36px;width:auto;filter:invert(1);mix-blend-mode:screen}
+.nav ul{display:flex;flex-wrap:nowrap;flex:0 1 auto;justify-content:flex-start;min-width:0;gap:0;margin:0;padding:0;list-style:none}
 .nav li a{display:block;white-space:nowrap;color:#fff;text-decoration:none;font:600 14px/1.2 "Fredoka",sans-serif;letter-spacing:.2px;padding:8px 7px;border-radius:999px}
 .nav li a:hover{background:rgba(255,255,255,.16)}
-@media(min-width:420px){.nav li a{font-size:15px;padding:8px 9px}}
+@media(min-width:420px){.nav li a{font-size:15px;padding:8px 8px}}
 .nav .lg{display:none}
-@media(min-width:760px){.nav .lg{display:inline}.nav ul{gap:8px}.nav li a{font-size:18px;padding:8px 14px}}
+@media(min-width:760px){.nav .wrap{gap:10px;height:56px}.nav .home img{height:40px}.nav .lg{display:inline}.nav ul{gap:2px}.nav li a{font-size:17px;padding:8px 12px}}
 
 /* hero */
 .hero{padding:0 0 8px}
