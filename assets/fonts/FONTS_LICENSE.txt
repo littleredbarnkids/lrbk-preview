@@ -1,0 +1,2 @@
+Luckiest Guy, Lilita One and Fredoka are Google Fonts licensed under the SIL Open Font License 1.1 (https://openfontlicense.org).
+Subset to Latin and converted to WOFF2 for this site; self-hosted so the site makes no third-party font requests.
