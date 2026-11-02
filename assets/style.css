@@ -236,3 +236,7 @@ footer{text-align:center}
 @media(max-width:599px){.lbt .lbt-little{font-size:.8em}}
 .etsy-cta{margin-top:12px}
 .etsy-note{margin:10px auto 0;max-width:46ch}
+/* t647u: theme accent words + home bullets */
+.lbt .lbt-hi{color:var(--red)}
+.tagbar.lbt .lbt-hi{color:#FFE3A3}
+.tt-points{max-width:560px;margin:14px auto 0;text-align:left}
