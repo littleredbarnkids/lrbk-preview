@@ -234,3 +234,4 @@ footer{text-align:center}
 /* mobile pass (t639u): keep "Little" small but solid */
 .lbt .lbt-little{opacity:1;font-weight:500}
 @media(max-width:599px){.lbt .lbt-little{font-size:.8em}}
+.etsy-cta{margin-top:12px}
