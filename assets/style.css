@@ -240,3 +240,13 @@ footer{text-align:center}
 .lbt .lbt-hi{color:var(--red)}
 .tagbar.lbt .lbt-hi{color:#FFE3A3}
 .tt-points{max-width:560px;margin:14px auto 0;text-align:left}
+/* t655u: one clean hover for all buttons (same as hero button) */
+.btn{transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease}
+.btn:hover{filter:none;transform:translateY(-2px);background:#B32420;box-shadow:0 6px 0 #8f1c19;color:#fff;text-decoration:none}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #8f1c19}
+/* t655u: home headline stacked, no comma */
+.lbt-stack .lbt-l1,.lbt-stack .lbt-l2{display:block}
+.lbt-stack .lbt-l1{font-size:1.18em;line-height:1.2}
+.lbt-stack .lbt-l2{line-height:1.15;margin-top:2px}
+.hero-text .promise.lbt-stack{margin-bottom:0}
+.hero-text .promise.lbt-stack + .btn{margin-top:40px}
