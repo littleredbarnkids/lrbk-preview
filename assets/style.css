@@ -33,12 +33,12 @@ h3{font-family:"Lilita One",sans-serif;font-weight:400;color:var(--red);font-siz
 @media(max-width:419px){.nav .wrap{padding:0 10px}}
 .nav .home{flex:0 0 auto;display:flex}
 .nav .home img{height:36px;width:auto;filter:invert(1);mix-blend-mode:screen}
-.nav ul{display:flex;flex-wrap:nowrap;flex:0 1 auto;justify-content:flex-start;min-width:0;gap:0;margin:0;padding:0;list-style:none}
+.nav ul{display:flex;flex-wrap:nowrap;flex:1 1 auto;justify-content:space-between;min-width:0;gap:0;margin:0;padding:0;list-style:none}
 .nav li a{display:block;white-space:nowrap;color:#fff;text-decoration:none;font:600 14px/1.2 "Fredoka",sans-serif;letter-spacing:.2px;padding:8px 7px;border-radius:999px}
 .nav li a:hover{background:rgba(255,255,255,.16)}
 @media(min-width:420px){.nav li a{font-size:15px;padding:8px 8px}}
 .nav .lg{display:none}
-@media(min-width:760px){.nav .wrap{gap:10px;height:56px}.nav .home img{height:40px}.nav .lg{display:inline}.nav ul{gap:2px}.nav li a{font-size:17px;padding:8px 12px}}
+@media(min-width:760px){.nav .wrap{gap:10px;height:56px}.nav .home img{height:40px}.nav .lg{display:inline}.nav li a{font-size:17px;padding:8px 12px}}
 
 /* hero */
 .hero{padding:0 0 8px}
@@ -169,3 +169,48 @@ footer .flinks{justify-content:center}
 /* small stencil logo at the end of the page (original colors) */
 .end-logo{display:flex;justify-content:center;padding:28px 0 24px}
 .end-logo img{height:80px;width:auto;mix-blend-mode:multiply}
+
+/* Daily Dad archive */
+.arch-note{max-width:62ch;margin:0 auto 26px;text-align:center}
+.arch{list-style:none;margin:0 auto;padding:0;display:grid;gap:18px;max-width:860px}
+.arch li{display:grid;grid-template-columns:88px 1fr;gap:14px 16px;align-items:start;background:#fff;border:2px solid var(--hay);border-radius:22px;padding:16px}
+.arch li[hidden]{display:none}
+.arch .th{width:88px;border-radius:8px;border:2px solid var(--paper);box-shadow:0 3px 10px rgba(70,30,20,.15)}
+.arch .meta{font:500 15px "Fredoka",sans-serif;color:var(--brown);margin:0}
+.arch h3{margin:0 0 .15em;font-size:24px}
+.arch .dl{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.arch .dl a{display:flex;align-items:center;justify-content:center;min-height:46px;border:2px solid var(--red);border-radius:999px;font:400 18px "Lilita One",sans-serif;color:var(--red);text-decoration:none;background:var(--cream)}
+.arch .dl a:hover{background:var(--red);color:#fff}
+@media(min-width:600px){.arch li{grid-template-columns:110px 1fr}.arch .th{width:110px}.arch .dl{grid-column:2;grid-template-columns:repeat(4,1fr)}}
+.arch-link{text-align:center;margin:14px 0 0}
+.arch-link a{font:400 19px "Lilita One",sans-serif;color:var(--red);display:inline-block;padding:10px 0;min-height:44px}
+
+/* Daily Dad sign-up: description bullets + bigger submit text */
+.dd-points{max-width:560px;margin:0 auto 26px}
+.form .btn.btn-send{white-space:nowrap;font-size:clamp(23px,6.6vw,28px);letter-spacing:.2px;padding:.5em .4em}
+
+/* footer: everything centered */
+footer .fgrid{text-align:center;justify-items:center}
+footer .fbrand{justify-content:center}
+
+/* links: obviously clickable */
+a{text-decoration:underline;text-decoration-color:currentColor;text-decoration-thickness:1.5px;text-underline-offset:3px;transition:color .15s,text-decoration-thickness .15s}
+a:hover{color:#8f1c19;text-decoration-thickness:3px}
+a:focus-visible{outline:3px solid var(--dark);outline-offset:3px;border-radius:4px}
+footer a,footer .flinks a{color:#fff;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px}
+footer a:hover,footer .flinks a:hover{color:var(--cream);text-decoration:underline;text-decoration-thickness:3px}
+footer a:focus-visible{outline-color:#fff}
+.series a{text-decoration:underline;text-underline-offset:4px}
+/* nav: underline bar on hover/focus, no size change */
+.nav li a{text-decoration:none;box-shadow:inset 0 -3px 0 transparent;transition:box-shadow .15s,background .15s}
+.nav li a:hover,.nav li a:active,.nav li a[aria-current]{color:#fff;background:rgba(255,255,255,.16);box-shadow:inset 0 -3px 0 #fff}
+.nav li a:focus-visible,.nav .home:focus-visible{outline:3px solid #fff;outline-offset:-3px}
+/* buttons and card links keep their look, add lift/shade */
+.btn,.btn:hover{text-decoration:none;color:#fff}
+.btn:hover{filter:brightness(.94)}
+.nav .home,.kp-head a.homelink,.arch .dl a{text-decoration:none}
+.books a{transition:transform .15s,box-shadow .15s}
+.books a:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(70,30,20,.18)}
+.books a:hover span{text-decoration:underline}
+footer{text-align:center}
+@media(min-width:900px){footer .fgrid{grid-template-columns:1fr}footer .flinks{justify-content:center}}
