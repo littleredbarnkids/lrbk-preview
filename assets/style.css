@@ -231,3 +231,6 @@ footer{text-align:center}
 .lbt .lbt-big{font:400 1.5em/1 "Luckiest Guy",cursive;letter-spacing:1px;vertical-align:baseline}
 .lbt .lbt-br{display:none}
 @media(max-width:599px){.lbt .lbt-br{display:inline}}
+/* mobile pass (t639u): keep "Little" small but solid */
+.lbt .lbt-little{opacity:1;font-weight:500}
+@media(max-width:599px){.lbt .lbt-little{font-size:.8em}}
