@@ -257,3 +257,13 @@ footer{text-align:center}
 @media(min-width:420px){.nav .home{padding:0 8px}}
 @media(min-width:760px){.nav .wrap{gap:0}.nav .home{padding:0 12px}}
 @media(max-width:359px){.nav .wrap{padding:0 6px}.nav li a{padding:8px 4px;font-size:13.5px}.nav .home{padding:0 4px}}
+/* t659u: home hero (desktop) - equal columns, text column centered with even spacing */
+@media(min-width:900px){
+  .hero-home .wrap{grid-template-columns:1fr 1fr;gap:40px}
+  .hero-home .hero-text{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .hero-home .brand{flex-direction:column;align-items:center}
+  .hero-home h1{margin:0}
+  .hero-home .sub{margin:.3em 0 0}
+  .hero-home .promise{margin:36px auto 0}
+  .hero-home .hero-text .promise.lbt-stack + .btn{margin-top:36px}
+}
