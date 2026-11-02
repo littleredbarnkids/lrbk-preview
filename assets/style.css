@@ -267,3 +267,18 @@ footer{text-align:center}
   .hero-home .promise{margin:36px auto 0}
   .hero-home .hero-text .promise.lbt-stack + .btn{margin-top:36px}
 }
+/* t660u: theme banner on two lines (no comma), more breathing room */
+.tagbar.lbt-stack{padding:24px 20px;margin:28px 0 32px}
+.tagbar.lbt-stack .lbt-l1{font-size:1em;line-height:1.25}
+.tagbar.lbt-stack .lbt-l2{line-height:1.25;margin-top:6px}
+/* t661u: archive entries - big page image, info + age picks in a side box (stacked on phones) */
+.arch li{grid-template-columns:1fr;gap:14px}
+.arch .th{width:100%;max-width:520px;height:auto;margin:0 auto;aspect-ratio:1100/1424}
+.arch .side{background:#fffdf8;border:1px solid var(--hay);border-radius:16px;padding:14px;display:grid;gap:12px;align-content:start}
+.arch .side .dl{grid-column:auto;grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){
+  .arch{max-width:960px}
+  .arch li{grid-template-columns:63fr 37fr;gap:20px;padding:18px}
+  .arch .th{max-width:none}
+  .arch .side{padding:18px}
+}
